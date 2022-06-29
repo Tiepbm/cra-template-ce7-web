@@ -1,0 +1,41 @@
+{
+    "package": {
+        "dependencies": {
+            "@craco/craco": "^6.4.3",
+            "@react-pdf/renderer": "^2.2.0",
+            "@testing-library/jest-dom": "^5.16.4",
+            "@testing-library/react": "^13.2.0",
+            "@testing-library/user-event": "^13.5.0",
+            "@types/node": "^16.11.33",
+            "@types/react": "^18.0.8",
+            "@types/react-dom": "^18.0.3",
+            "@types/react-transition-group": "^4.4.4",
+            "antd": "^4.20.2",
+            "axios": "^0.27.2",
+            "craco-less": "^2.0.0",
+            "file-saver": "^2.0.5",
+            "lodash": "^4.17.21",
+            "moment": "^2.29.3",
+            "node-polyfill-webpack-plugin": "^1.1.4",
+            "numeral": "^2.0.6",
+            "react": "^18.1.0",
+            "react-document-title": "^2.0.3",
+            "react-dom": "^18.1.0",
+            "react-responsive": "^9.0.0-beta.10",
+            "react-router-dom": "^6.3.0",
+            "react-scripts": "5.0.1",
+            "react-vertical-timeline-component": "^3.5.2",
+            "typescript": "^4.6.4",
+            "web-vitals": "^2.1.4"
+        },
+        "scripts": {
+            "start": "cross-env PORT=9002 craco start",
+            "build": "cross-env GENERATE_SOURCEMAP=false craco build",
+            "test": "react-scripts test",
+            "eject": "react-scripts eject"
+        },
+    "eslintConfig": {
+        "extends": ["react-app", "react-app/jest"]
+    }
+}
+}

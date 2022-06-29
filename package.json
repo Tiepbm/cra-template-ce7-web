@@ -1,22 +1,21 @@
 {
-  "name": "ce7-reactjs-boilerplate",
+  "name": "ce7-reactjs-template",
   "version": "1.0.0",
   "description": "ReactJS Template",
   "repository": "git@github.com:Tiepbm/ce7-reactjs-boilerplate.git",
   "files": [
     "template",
-    "template.config.js"
+    "template.json"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tiepbm/ce7-reactjs-boilerplate.git"
   },
   "keywords": [
-    "reactjs",
-    "typescript",
-    "jest",
+    "react",
+    "create-react-app",
     "template",
-    "boilerplate"
+    "typescript"
   ],
   "author": "Bui Manh Tiep",
   "license": "MIT"
