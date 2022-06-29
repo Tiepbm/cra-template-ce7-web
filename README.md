@@ -1,1 +1,1 @@
-# ce7-reactjs-boilerplate
+# ce7-app-boilerplate
