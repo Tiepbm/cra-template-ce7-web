@@ -1,0 +1,82 @@
+.ant-modal-content {
+  padding: 0 24px;
+
+  .ant-modal-header {
+    padding: 16px 0;
+
+    .ant-modal-title {
+      span {
+        color: $txt-color-primary !important;
+        font-size: $txt-size-h5;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .ant-modal-body {
+    padding: 16px 0;
+    font-size: $txt-size-h7;
+  }
+
+  .ant-modal-footer {
+    padding: 0 0 24px 0;
+    border: 0;
+
+    .btn_cancel {
+      margin-top: 5px;
+    }
+  }
+}
+
+
+.ant-modal-custom {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(236, 236, 236, 0.85);
+    border-radius: 10px;
+  }
+
+  .ant-modal-content {
+    padding: 0 24px;
+
+    .ant-modal-header {
+      padding: 16px 0;
+
+      .ant-modal-title {
+        span {
+          color: black!important;
+          font-size: $txt-size-h7;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .ant-modal-body {
+      //padding: 16px 0;
+      padding-top: 0;
+      font-size: $txt-size-h7;
+    }
+
+    .ant-modal-footer {
+      padding: 0 0 24px 0;
+      border: 0;
+      text-align: left;
+
+      .btn_cancel {
+        margin-top: 5px;
+      }
+    }
+  }
+
+}
+
+.modal-without-header-padding {
+  .ant-modal-header { 
+    padding: 12px 0;
+    &.log-order {
+      padding: 8px 12px 12px;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+html {
+  display: flex;
+  min-height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.main-container {
+  >div{
+    min-height: 100%
+  }
+}
+
+#root, #app-main, .main-body {
+  //display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+
+.splash-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.border-card-header{
+  box-shadow: 0px 2px 14px #E6E6E6;
+  background-color: #FFFFFF;
+}
+.title-body{
+  font-size: 20px;
+  color: #1A1A1A;
+  font-weight: 500;
+}
+.icon-empty{
+  width: 40px;
+  height: 40px;
+}
+.track-order {
+  .ant-steps-item-icon {
+    padding: 1px;
+    background: #fff;
+    border: 1px solid #F9A400;
+    width: 10px !important;
+    height: 10px !important;
+
+    .ant-steps-icon-dot {
+      top: 15% !important;
+      left: 5% !important;
+    }
+  }
+  .ant-steps-item-wait {
+    .ant-steps-item-icon {
+      border: 1px solid rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+.dash-outline-vertical {
+  & > svg {
+    height: 100%;
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+  }
+}
+.main-content{
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+  font-size: 16px;
+}
+
+.scroll-wrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+.login-wrapper {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image:url('../images/img-bg.png');
+  background-position: center;
+  background-size: contain;
+}
+.ant-tabs-tab.ant-tabs-tab-active {
+  border-bottom: 2px solid #1890ff !important;
+  z-index: 2;
+}
+//.ant-modal-content{
+  //max-height: 600px;
+  //overflow-y: auto;
+  //overflow-x: hidden;
+//}
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "module/common";
+@import "module/form";
+@import "module/table";
+@import "module/popup";
+@import "module/layout-form";
+@import "module/signin";
+@import "module/button";

@@ -1,0 +1,152 @@
+$width-card: 694px;
+$height-card: 559px;
+$bg-card: rgba(255, 255, 255, 0.8);
+$bg-input: rgba(234, 235, 239, 0.4);
+$bg-button: #0083ca;
+$border-input: rgba(213, 213, 213, 1);
+$boder-color-focus: rgba(52, 141, 243, 0.4);
+.container-login {
+  background-image: url('../../images/background-login.png');
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  font-family: 'roboto', sans-serif;
+}
+
+.card {
+  position: relative;
+  width: $width-card;
+  height: $height-card;
+  justify-content: center;
+  background-color: $bg-card;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+
+  .imgLogo {
+    position:absolute;
+    left: 41.22px;
+    width: 70.23px;
+    height: 87.66px;
+  }
+
+  &__title {
+    color: rgba(19, 27, 37, 1);
+    font-weight: 500;
+    padding-bottom: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -61px;
+  }
+  .form_group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    //padding-bottom: 17px;
+  }
+  &__input {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 65px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid $border-input;
+    border-radius: none;
+    outline: none;
+    padding: 1.25rem;
+    background: $bg-input;
+    &:hover {
+      border-color: $boder-color-focus;
+    }
+    &:focus {
+      border-color: $boder-color-focus;
+      padding-top: 2.6rem;
+    }
+  }
+  select {
+    padding-top: 19.5px !important;
+    background-image: url(../../images/chevron-down.svg);
+    background-position: right 20px;
+    background-position-x: 97%;
+    appearance: none;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+  }
+  &__label {
+    position: absolute;
+    left: 0.9rem;
+    top: 1.8rem;
+    font-weight: 400;
+    z-index: 99;
+    padding: 0 0.5rem;
+    color: rgba(19, 27, 37, 1);
+    cursor: text;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    transition: top 200ms ease-in;
+  }
+  .icon_eye {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    width: 18px;
+    margin-top: 14px;
+  }
+  .remember {
+    display: flex;
+    justify-content: flex-start;
+    width:400px;
+    align-items: center;
+    label {
+      padding-left: 10.5px;
+      color: #131b25;
+    }
+  }
+
+  .btn_login {
+    margin-top: 28px;
+    button {
+      background: $bg-button;
+      border-radius: 4px;
+      width: 160px;
+      height: 35px;
+      color: #f7fafc;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      border: none;
+    }
+    button[disabled] {
+      background-color: #6db8dd;
+    }
+  }
+}
+.card__input:focus ~ .card__label,
+.card__input:not(:placeholder-shown).card__input:not(:focus) ~ .card__label {
+  top: 0.6rem;
+  font-size: 11px;
+  z-index: 0;
+  line-height: 13px;
+  color: rgba(74, 85, 104, 1);
+}
+.card__input:not(:placeholder-shown).card__input:not(:focus) {
+  padding-top: 2.6rem;
+}

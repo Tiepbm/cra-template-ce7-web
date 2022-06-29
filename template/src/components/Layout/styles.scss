@@ -1,0 +1,108 @@
+
+.main-layout{
+  .sidebar-left::-webkit-scrollbar{
+    display: none;
+  }
+  .sidebar-left{
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none; // Internet Explorer 10+
+    scrollbar-width: none; // Firefox
+    box-shadow: 6px 0px 16px rgba(112, 112, 112, 0.1);
+    background-color: #0083ca;
+  }
+  .ant-layout-sider-has-trigger .ant-layout-sider-trigger{
+    border-top: 0.5px solid #FFFFFF;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 24px;
+  } .ant-layout-sider-collapsed .ant-layout-sider-trigger{
+    border-top: 0.5px solid #FFFFFF;
+    background-color: transparent;
+    text-align: center;
+        padding-left: 0;
+  }
+  .header-sider{
+    height:70px;
+  }
+  .logo {
+    width: 80%;
+    margin: 10px;
+  }
+  .sidebar-left .logo-collapse {
+    display:flex;
+    height: 32px;
+    margin: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .header{
+    background: #fff;
+    position: fixed;
+    z-index: 99;
+    left: 50px;
+    right: 0;
+    align-items: center;
+    box-shadow: 0px 2px 14px #E6E6E6;
+  }
+  .header-mobile{
+    background: #fff;
+    position: fixed;
+    z-index: 99;
+    left: 0px;
+    right: 0;
+    padding: 0;
+    align-items: center;
+    box-shadow: 0px 2px 14px #E6E6E6;
+  }
+  .content {
+    margin-top: 64px;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F7FAFC;
+    overflow: scroll;
+  }
+  .content-mobile {
+    margin-top: 64px;
+    padding: 20px;
+    background-color: #F7FAFC;
+    overflow: scroll;
+  }
+  .ant-menu{
+    background-color: transparent;
+  }
+  .ant-menu-item-icon, .ant-menu-title-content{
+    color: #FFFFFF;
+  }
+  .ant-menu-item-selected{
+    padding-top: 0;
+    padding-bottom: 0;
+    .ant-menu-item-icon, .ant-menu-title-content{
+      color: orange;
+      font-weight: 600;
+    }
+    border-right: 1px solid orange;
+  }
+  .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left{
+   border-right: 0;
+  }
+  .ant-menu-inline .ant-menu-item::after{
+   border-right: 0;
+  }
+  .menu-group{
+    width: 100%;
+    align-items: center!important;
+    display: flex!important;
+  }.menu-group-collapse{
+     width: 100%;
+     align-items: center!important;
+     display: flex!important;
+  justify-content: center;
+   }
+}
