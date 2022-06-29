@@ -20,6 +20,7 @@
 ## :star: Features
 - Fontawesome
 - Axios
+- Render and Printer PDF
 - And so much more
 
 ## :arrow_forward: Usage
