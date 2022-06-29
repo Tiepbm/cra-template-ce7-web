@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ReactJS Template",
   "repository": "git@github.com:Tiepbm/ce7-reactjs-boilerplate.git",
+  "main": "template.json",
   "files": [
     "template",
     "template.json"
