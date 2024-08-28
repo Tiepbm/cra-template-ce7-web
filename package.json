@@ -17,8 +17,5 @@
     "typescript"
   ],
   "author": "Bui Manh Tiep",
-  "license": "MIT",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  }
+  "license": "MIT"
 }
