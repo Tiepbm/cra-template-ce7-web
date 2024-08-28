@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:Tiepbm/ce7-reactjs-boilerplate.git"
+    "url": "git@github.com:Tiepbm/cra-template-ce7-web.git"
   },
   "keywords": [
     "react",
