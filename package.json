@@ -1,5 +1,5 @@
 {
-  "name": "ce7-reactjs-template",
+  "name": "cra-template-ce7-web",
   "version": "1.0.0",
   "description": "ReactJS Template",
   "files": [
@@ -17,5 +17,8 @@
     "typescript"
   ],
   "author": "Bui Manh Tiep",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
