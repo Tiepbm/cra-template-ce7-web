@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import './App.less';
+import './App.css';
 import './resources/styles/custom.scss';
 import {ConfigProvider, Layout, Spin} from "antd";
-import {HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./containers/Home";
 import Signin from "./containers/Signin";
-import viVN from 'antd/lib/locale-provider/vi_VN'
+import viVN from 'antd/lib/locale/vi_VN'
 import moment from "moment";
 import ProtectedRoute from "./components/Route/ProtectedRoute";
 import {localStorageRead, localStorageSave} from "./utils/LocalStorageUtils";
@@ -113,14 +113,14 @@ function App() {
                     </Layout>
                 </Layout>:
                 <ConfigProvider locale={viVN}>
-                    <HashRouter>
+                    <BrowserRouter>
                         <div className={'main-body'}>
                             <Routes>
                                 <Route path={'/'} element={<ProtectedRoute><Home/></ProtectedRoute>}></Route>
                                 <Route path={'/login'} element={<Signin/>}></Route>
                             </Routes>
                         </div>
-                    </HashRouter>
+                    </BrowserRouter>
                 </ConfigProvider>
             }
         </div>);
