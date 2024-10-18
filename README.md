@@ -26,5 +26,5 @@
 ## :arrow_forward: Usage
 
 ```sh
-npx create-react-app MyApp --template cra-template-ce7-web
+npx create-react-app myapp --template @tiepbm/cra-template-ce7-web
 ```

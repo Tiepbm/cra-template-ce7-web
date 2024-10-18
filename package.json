@@ -18,9 +18,6 @@
   ],
   "author": "Bui Manh Tiep",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/@tiepbm"
-  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
