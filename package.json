@@ -1,6 +1,6 @@
 {
   "name": "@tiepbm/cra-template-ce7-web",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "ReactJS Template",
   "files": [
     "template",
@@ -19,7 +19,7 @@
   "author": "Bui Manh Tiep",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/@tiepbm"
   },
   "main": "index.js",
   "scripts": {
