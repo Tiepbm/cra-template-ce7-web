@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Tiepbm/ce7-reactjs-boilerplate.git"
+    "url": "git+ssh://git@github.com/Tiepbm/cra-template-ce7-web.git"
   },
   "keywords": [
     "react",
@@ -26,7 +26,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/Tiepbm/ce7-reactjs-boilerplate/issues"
+    "url": "https://github.com/Tiepbm/cra-template-ce7-web/issues"
   },
-  "homepage": "https://github.com/Tiepbm/ce7-reactjs-boilerplate#readme"
+  "homepage": "https://github.com/Tiepbm/cra-template-ce7-web#readme"
 }
