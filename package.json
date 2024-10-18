@@ -1,5 +1,5 @@
 {
-  "name": "cra-template-ce7-web",
+  "name": "@tiepbm/cra-template-ce7-web",
   "version": "1.0.0",
   "description": "ReactJS Template",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:Tiepbm/ce7-reactjs-boilerplate.git"
+    "url": "git+ssh://git@github.com/Tiepbm/ce7-reactjs-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -20,5 +20,13 @@
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Tiepbm/ce7-reactjs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Tiepbm/ce7-reactjs-boilerplate#readme"
 }
