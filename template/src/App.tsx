@@ -100,7 +100,7 @@ function App() {
                 setLoading(false);
             }).catch(err => {
                 localStorageSave(PROFILE_KEY, null);
-                window.location.href = '#/login';
+                window.location.href = '/login';
             });
         } else setLoading(false);
     }, []);

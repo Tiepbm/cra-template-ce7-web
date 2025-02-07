@@ -39,8 +39,6 @@ export class Repository {
     }
     if (typeof Repository._defaultResponseInterceptor === 'function') {
       this.http.interceptors.response.use((res: AxiosResponse<any>)=>{
-        if(res.data.hasOwnProperty('code')&&res.data.code!=200) return Promise.reject(res);
-        else
         return res;
       },(error: AxiosError)=>{
         if (error?.response?.status) {
@@ -48,7 +46,7 @@ export class Repository {
             case 401:
               localStorageSave(TOKEN_KEY,null);
               localStorageSave(PROFILE_KEY,null);
-              window.location.href=process.env.REACT_APP_401_REDIRECT?process.env.REACT_APP_401_REDIRECT:'';
+              window.location.href='/login';
               break;
             case 500:
               // M24Notification.notifyError('Thất bại','Xảy ra lỗi. Vui lòng liên hệ kỹ thuật');
